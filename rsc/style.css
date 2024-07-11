@@ -48,8 +48,12 @@ body{
     background-color: #A7AF60;
     border: 0px;
     border-radius: 20px;
+    padding: 7%;
 }
-
+a, a:visited{
+  color: #4f5b23;
+  text-decoration: none;
+}
 .card{
     border: 1px solid #4f5b23;
     border-radius: 10px;
@@ -61,6 +65,10 @@ body{
 .img-container{
   position: relative;
   height: 50vh;
+}
+.normImage{
+  width: 60%;
+  max-width: 100%;
 }
 .polaroid{
     border: 3vh solid #fff;
@@ -77,14 +85,25 @@ body{
     /*-webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);*/
 }
-
-.normImage{
-  width: 60%;
-  max-width: 100%;
+.material-symbols-outlined{
+  font-size: 4em;
 }
-
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
   .adj-width{
     width: 90% !important;
   }
+  .polaroid{
+    position: relative;
+    width: 60%;
+    top : auto;
+    transform : none;
+    left : auto;
+
+    border: 3vh solid #fff;
+    border-bottom: 9vh solid #fff;
+  }
+  .img-container{
+    margin-top: 10%;
+  }
+
 };
