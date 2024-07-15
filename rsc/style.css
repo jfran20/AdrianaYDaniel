@@ -135,6 +135,9 @@ ul > a {
     width: 90% !important;
   }
   .polaroid{
+    border: 2.5vh solid #fff;
+    border-bottom: 7vh solid #fff;
+
     position: relative;
     width: 60%;
     top : auto;
@@ -160,6 +163,7 @@ ul > a {
  }
  .slide{
   height: auto;
+  min-height: 100vh;
  }
  .card-gift{
   margin-top: 2vh;
