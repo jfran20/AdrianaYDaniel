@@ -31,7 +31,7 @@
   background-position: center center;
   background-repeat: no-repeat, no-repeat; 
   background-size: cover, cover;
-  height: 100vh !important ;
+  height: 100vh;
 }
 .btn{
   border-radius: 20px;
@@ -129,23 +129,30 @@ ul > a {
   background-color: #a7af604a
 }
 
+#photo1{background-image: url('Images/7.jpg');background-position: 0% 20%;}
+#photo2{background-image: url('Images/11.jpg');}
+#photo3{background-image: url('Images/16.jpg');background-position: 30% 0%;}
+#photo4{background-image: url('Images/8.jpg');background-position: 0% 15%;}
 
 @media only screen and (max-width: 1000px) {
+  #photo1{background-image: url('Images/7.jpg');background-position: 0% 20%;}
+  #photo2{background-image: url('Images/11.jpg');background-position: 50% 0%;}
+  #photo3{background-image: url('Images/16.jpg');background-position: 35% 0%;}
+  #photo4{background-image: url('Images/8.jpg');background-position: 0% 15%;}
+
   .adj-width{
     width: 90% !important;
+    font-size: 0.5em !important;
   }
   .polaroid{
-    border: 2.5vh solid #fff;
-    border-bottom: 7vh solid #fff;
+    border: 2.3vh solid #fff;
+    border-bottom: 6vh solid #fff;
 
     position: relative;
     width: 60%;
     top : auto;
     transform : none;
     left : auto;
-
-    border: 3vh solid #fff;
-    border-bottom: 9vh solid #fff;
   }
   .img-container{
     margin-top: 10%;
@@ -156,7 +163,7 @@ ul > a {
   text-align: center;
  }
  .galImage{
-  margin:10px !important;
+  margin:5px !important;
  }
  .galImageRow{
   height: 50%;
@@ -168,4 +175,5 @@ ul > a {
  .card-gift{
   margin-top: 2vh;
  }
+
 };
