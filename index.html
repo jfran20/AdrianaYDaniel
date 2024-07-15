@@ -12,23 +12,25 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" href="rsc/style.css">
     
+    <script src="rsc/regresiva.js"></script>
   </head>
   <body>
-    <div class="container-fluid mainBanner slide p-3 text-center montserrat-regular" style="color:white;" id="Banner">
+    <!-- Landing: Protada de la boda-->
+    <div class="container-fluid mainBanner p-3 text-center montserrat-regular" style="color:white;" id="Banner">
       <div class="row">
         <h1 class="great-vibes-regular" style="font-size: 2.5em;">Adriana y Daniel</h1>
         <p style="font-size: 0.8em;">Nuestra boda</p>
       </div>
       <div style="height: 50%;"></div>
-      <div class="row m-auto adj-width" style="width: 50%;font-size:0.8em;">
+      <div class="row m-auto adj-width alike-regular" style="width: 50%;font-size:0.8em;">
         <div class="row">
           <p>SAVE THE DATE</p>
         </div>
         <div class="row">
-          <div class="col-3"><span>000:</span></div>
-          <div class="col-3"><span>00:</span></div>
-          <div class="col-3"><span>00:</span></div>
-          <div class="col-3"><span>00</span></div>
+          <div class="col-3"><span id="days">000:</span></div>
+          <div class="col-3"><span id="hours">00:</span></div>
+          <div class="col-3"><span id="minutes">00:</span></div>
+          <div class="col-3"><span id="seconds">00</span></div>
         </div>
 
         <div class="row">
@@ -37,6 +39,7 @@
           <div class="col-3">Minutos</div>
           <div class="col-3">Segundos</div>
         </div>
+
         <br>
         <br>
         <div class="row">
@@ -48,26 +51,34 @@
 
     <hr>
 
+    <!-- Invitación -->
     <div class="container-fluid slide montserrat-regular text-center p-5" id="Invitation" style="overflow: auto;">
-      <div class="row" style="font-size: 0.7em;height:100%;">
+      <div class="row" style="font-size: 0.6em;height:100%;">
         <div class="col-lg-6 align-self-center">  
-          <p>Gracias por celebrar con nosotros y hacer nuestro día más especial con tu presencia</p>
-          <p>Tenemos el honor de invitarte a:</p>
+          
+          <div class='row'>
+            <p>Gracias por celebrar con nosotros y hacer nuestro día más especial con tu presencia</p>
+            <p>Tenemos el honor de invitarte a:</p>
+            <br>
+            <h2 class="alike-regular" style="font-size: 2.5em;">NUESTRA BODA</h2>
+            <h2 class="alike-regular" style="font-size: 2.5em;">16-11-2024</h2>
+          </div>
+          
           <br>
-          <h2 class="baskervville-sc-regular" style="font-size: 2.5em;">NUESTRA BODA</h2>
-          <h2 class="baskervville-sc-regular" style="font-size: 2.5em;">16-11-2024</h2>
-          <br>
-          <p>Te esperamos en el Santuario de la Virgen de Guadalupe</p>
-          <br>
+          
           <div class="row">
-            <div class="col">
-              <a href="https://www.google.com/maps/place/Santuario+de+Nuestra+Se%C3%B1ora+de+Guadalupe/@21.3561395,-101.931906,15z/data=!4m6!3m5!1s0x842bd2359fcd439b:0x53324e52cfed23c5!8m2!3d21.3561395!4d-101.931906!16s%2Fg%2F1tvr_0zw?entry=ttu" class="btn btnGreen" target="_blank">Ubicación</a>
+            <div class="col-lg-5 itinerario">
+              <span class="material-symbols-outlined">church</span>
+              <h4>Ubicación</h4>
+              <p style="text-align: justify;font-size: 0.8em;">Te esperamos en el Santuario de la Virgen de Guadalupe ubicado en C. Constituyentes, Centro, 47400 Lagos de Moreno, Jal.</p>
+              <a href="https://www.google.com/maps/place/Santuario+de+Nuestra+Se%C3%B1ora+de+Guadalupe/@21.3561395,-101.931906,15z/data=!4m6!3m5!1s0x842bd2359fcd439b:0x53324e52cfed23c5!8m2!3d21.3561395!4d-101.931906!16s%2Fg%2F1tvr_0zw?entry=ttu" target="_blank" class="btn btnGreen">Ver ubicación</a>
             </div>
-            <div class="col">
-              <a href="https://wa.me/524772397544?text=%C2%A1Hola%21+Confirmo+mi+asistencia+a+la+boda+de+%2AAdriana+y+Daniel%2A" class="btn btnGreen" target="_blank">Confirma</a>
-            </div>
-            <div class="col">
-              <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51408932" class="btn btnGreen" target="_blank">Mesa de regalos</a>
+
+            <div class="col-lg-5 itinerario">
+              <span class="material-symbols-outlined">liquor</span>
+              <h4>Fiesta</h4>
+              <p style="text-align: justify;font-size: 0.8em;">¡Te esperamos en la granja el Rodeo para continuar con la celebración!</p>
+              <a href="https://www.google.com/maps/place/El+Rodeo/@21.337952,-101.9322709,17z/data=!4m14!1m7!3m6!1s0x842bd22bcf5e470d:0x90d009ccd2c6d7d9!2sEl+Rodeo!8m2!3d21.337947!4d-101.9296906!16s%2Fg%2F11cs01fhn4!3m5!1s0x842bd22bcf5e470d:0x90d009ccd2c6d7d9!8m2!3d21.337947!4d-101.9296906!16s%2Fg%2F11cs01fhn4?entry=ttu" target="_blank" class="btn btnGreen">Ver ubicación</a>
             </div>
           </div>
         </div>
@@ -80,59 +91,51 @@
     </div>
 
     <hr>
-    <div class="container-fluid slide p-3 montserrat-regular text-center" id="Details">
-        <div class="row great-vibes-regular"><h2 style="font-size: 2em;">Detalles</h2></div>
+
+    <!-- Detalles -->
+    <div class="container-fluid p-3 montserrat-regular text-center" id="Details">
+        <div class="row great-vibes-regular"><h2 style="font-size: 2em;color:#AA9371">Detalles</h2></div>
         <div class="row" style="font-size: 0.5em;">
           <div class="col-lg-4 mt-4">
-            <h4>Ubicación</h4>
-            <span class="material-symbols-outlined">church</span>
-            <p style="text-align: justify;">Te esperamos en el Santuario de la Virgen de Guadalupe ubicado en C. Constituyentes, Centro, 47400 Lagos de Moreno, Jal.</p>
-            <a href="" target="_blank" class="btn btnBorder">Ubicación</a>
+            <span class="material-symbols-outlined">block</span>
+            <h2 class="alike-regular">No kids</h2>
+            <p class="p-3">Para que todos pasemos un momento increíble no se permiitra el acceso a niños</p>
           </div>
           <div class="col-lg-4 mt-4">
-            <h4>Hoteles</h4>
             <span class="material-symbols-outlined">hotel</span>
-            <p>Convenios con hoteles en la zona y códigos</p>
+            <h2 class="alike-regular">Hoteles</h2>
+            <p class="p-3">Convenios con hoteles en la zona y códigos</p>
             <ul>
-              <a href="https://www.google.com/search?q=city+express+lagos+de+moreno&rlz=1C1ONGR_esMX1002MX1002&oq=CITY+EXPRESS+LAGOS+DE+MORENO&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyGQgBEC4YrwEYxwEYgAQYjgUYmAUYmQUYngUyBwgCEAAYgAQyCAgDEAAYFhgeMggIBBAAGBYYHjIKCAUQABiABBiiBDIKCAYQABiABBiiBNIBCDM5OTlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" class="btn btnBorder w-100" target="_blank"><b>CITY EXPRESS: </b> <i>BODAADRIANA&DANIEL1611</i></a>
-              <a href="https://www.google.com/maps/place/Hotel+Lagos+Inn+-+Hotel+en+el+Centro+de+Lagos+de+Moreno/@21.3557997,-101.9315875,15z/data=!4m2!3m1!1s0x0:0x3eaeb8064d493aa7?sa=X&ved=1t:2428&ictx=111" class="btn btnBorder w-100 mt-3" target="_blank"><b>LAGOS INN: </b><i>Boda Adriana y Daniel</i></a>
-              <a href="https://www.google.com/maps/place/Zegen+Hoteles/@21.3715967,-101.9044136,15z/data=!4m2!3m1!1s0x0:0xf23ff3c78049f1ad?sa=X&ved=1t:2428&ictx=111" class="btn btnBorder w-100 mt-3" target="_blank"><b>ZEGEN: </b><i>LAYD</i></a>
+              <a href="https://www.google.com/search?q=city+express+lagos+de+moreno&rlz=1C1ONGR_esMX1002MX1002&oq=CITY+EXPRESS+LAGOS+DE+MORENO&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyGQgBEC4YrwEYxwEYgAQYjgUYmAUYmQUYngUyBwgCEAAYgAQyCAgDEAAYFhgeMggIBBAAGBYYHjIKCAUQABiABBiiBDIKCAYQABiABBiiBNIBCDM5OTlqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8" class="btn btnGreen" target="_blank"><b>CITY EXPRESS: </b> <i>BODAADRIANA&DANIEL1611</i></a>
+              <a href="https://www.google.com/maps/place/Hotel+Lagos+Inn+-+Hotel+en+el+Centro+de+Lagos+de+Moreno/@21.3557997,-101.9315875,15z/data=!4m2!3m1!1s0x0:0x3eaeb8064d493aa7?sa=X&ved=1t:2428&ictx=111" class="btn btnGreen mt-3" target="_blank"><b>LAGOS INN: </b><i>Boda Adriana y Daniel</i></a>
+              <a href="https://www.google.com/maps/place/Zegen+Hoteles/@21.3715967,-101.9044136,15z/data=!4m2!3m1!1s0x0:0xf23ff3c78049f1ad?sa=X&ved=1t:2428&ictx=111" class="btn btnGreen mt-3" target="_blank"><b>ZEGEN: </b><i>LAYD</i></a>
             </ul>
           </div>
           <div class="col-lg-4 mt-4">
-            <h4>Fiesta</h4>
-            <span class="material-symbols-outlined">liquor</span>
-            <p>¡Te esperamos en el Rodeo para continuar con la celebración!</p>
-            <a href="https://www.google.com/maps/place/El+Rodeo/@21.337952,-101.9322709,17z/data=!4m14!1m7!3m6!1s0x842bd22bcf5e470d:0x90d009ccd2c6d7d9!2sEl+Rodeo!8m2!3d21.337947!4d-101.9296906!16s%2Fg%2F11cs01fhn4!3m5!1s0x842bd22bcf5e470d:0x90d009ccd2c6d7d9!8m2!3d21.337947!4d-101.9296906!16s%2Fg%2F11cs01fhn4?entry=ttu" target="_blank">
-              <button type="button" class="btn btnBorder">Ubicación</button>
-            </a>
-          </div>
-        </div>
-        <hr>
-        <div class="row"> 
-          <div class="col-sm-4 great-vibes-regular align-self-center"><h2 style="font-size: 2em;">Itinerario</h2></div>
-          <div class="col-sm-4 great-vibes-regular">
-            <span class="material-symbols-outlined">church</span>
-            <p>Ceremonia Religiosa</p>
-            <p>10:00 hrs</p>
-          </div>
-          <div class="col-sm-4 great-vibes-regular">
-            <span class="material-symbols-outlined">local_bar</span>
-            <p>Recepción en el salón</p>
-            <p>10:00 hrs</p>
+            <span class="material-symbols-outlined">styler</span>
+            <h2 class="alike-regular">Dress code</h2>
+            <p class="p-3">El dress code de esta ocasión será formalany</p>
           </div>
         </div>
     </div>
-    <!--
-
+    
     <hr>
 
-    <div class="container-fluid slide p-3 montserrat-regular" id="Gallery">
-      <h2>GALERIA</h2>
-      <div class="row">
-        <div class="col-sm-8"></div>
-        <div class="col-sm-4">
-          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <!-- Galería -->
+    <div class="container-fluid p-3 montserrat-regular" id="Gallery">
+      <div class="row slide">
+        <div class="col-lg-7 m-2">
+          <div class="row galImageRow">
+            <div class="col-7 galImage m-2" style="background-image: url('rsc/Images/7.jpg');background-position: 0% 20%;"></div>
+            <div class="col-4 galImage m-2" style="background-image: url('rsc/Images/11.jpg');"></div>
+          </div>
+          <div class="row galImageRow">
+            <div class="col-4 galImage m-2" style="background-image: url('rsc/Images/16.jpg');background-position: 30% 0%;"></div>
+            <div class="col-7 galImage m-2" style="background-image: url('rsc/Images/8.jpg');background-position: 0% 15%;"></div>
+          </div>
+        </div>
+        <div class="col-lg-4 m-2" style="align-content: center;">
+          <div id="carouselExampleIndicators" class="carousel" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -140,13 +143,13 @@
             </div>
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="rsc/Images/3.jpg" class="d-block normImage" alt="...">
+                <img src="rsc/Images/4.jpg" class="d-block w-100 CarImg" style='height:80vh;'>
               </div>
               <div class="carousel-item">
-                <img src="rsc/Images/4.jpg" class="d-block normImage" alt="...">
+                <img src="rsc/Images/5.jpg" class="d-block w-100 CarImg" style='height:80vh;'>
               </div>
               <div class="carousel-item">
-                <img src="rsc/Images/5.jpg" class="d-block normImage" alt="...">
+                <img src="rsc/Images/6.jpg" class="d-block w-100 CarImg" style='height:80vh;'>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -161,43 +164,41 @@
         </div>
       </div>
     </div>
-
+    
     <hr>
 
-    <div class="container-fluid slide p-3 montserrat-regular text-center" id="Gifts">
+    <!-- Mesa de regalos -->
+    <div class="container-fluid p-3 montserrat-regular text-center" id="Gifts">
       <div class="row">
-          <h2 class="great-vibes-regular ">Mesa de regalos</h2>
-          <p>No es necesario pero si gustas puedes ayudarnos dejando un regalo por alguno de los siguientes medios </p>
+          <h2 class="great-vibes-regular" style="font-size: 2em;color:#AA9371;">Mesa de regalos</h2>
+          <p style="font-size: 0.7em;">Tu presencia en nuestro día especial es el mejor regalo que podríamos pedir. Sin embargo, si deseas hacernos un obsequio adicional, agradeceríamos un aporte financiero para ayudarnos a empezar nuestra vida juntos</p>
       </div>
       <br>
-      <br>
       <div class="row">
-        <div class="col-md-4 col-sm-offset-2">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title">Liverpool</h2>
-              <p class="card-text h3">Mesa de regalos: 51408932</p>
-              <p class="card-text h4">Fecha: 16/11/2024</p>
-              <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51408932" class="card-link" target="_blank">Ir</a>
-            </div>
+        <div class="col-md-5" style="margin: auto;">
+          <div class="card-gift p-3 align-content-center">
+            <h2>Liverpool</h2>
+            <p class="card-text h5">Mesa de regalos: 51408932</p>
+            <p class="card-text h5">Fecha: 16/11/2024</p>
+            <a href="https://mesaderegalos.liverpool.com.mx/milistaderegalos/51408932" class="btn btnGreen" target="_blank">Ir a la mesa de regalos</a>
           </div>
         </div>
 
-        <div class="col-md-4">
-          <div class="card">
-            <div class="card-body">
-              <h2 class="card-title">Banamex</h2>
-              <p class="card-text h3">Cuenta: 6182863</p>
-              <p class="card-text h4">Clabe: 002225904361828635</p>
-              <p class="card-text" style="font-size: 2rem;">Adriana Márquez García</p>
-              <p class="card-text" style="font-size: 2rem;">Referencia: Boda A&D</p>
-            </div>
+        <div class="col-md-5" style="margin: auto;">
+          <div class="card-gift p-3 align-content-center">
+            <h2>Banamex</h2>
+            <p class="card-text h5"><b>Cuenta:</b> 6182863</p>
+            <p class="card-text h5"><b>Clabe:</b> 002225904361828635</p>
+            <p class="card-text m-0" style="font-size: 0.5em;">Adriana Márquez García</p>
+            <p class="card-text m-0" style="font-size: 0.5em;">Referencia: Boda A&D</p>
           </div>
         </div>
+      </div>
+      <br>
+      <div class="row" style="text-align: right;font-size: 0.5em;">
+        <a href="#Banner" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Ir al inicio</a>
       </div>
     </div>
-
--->
 
 
 
