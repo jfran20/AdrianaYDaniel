@@ -24,6 +24,11 @@
   font-style: normal;
 }
 
+/* Icons */
+.material-symbols-outlined{
+  font-size: 5vw;
+  color:#AA9371;
+}
 
 /* classes */
 .mainBanner{
@@ -117,10 +122,7 @@ ul > a {
     /*-webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);*/
 }
-.material-symbols-outlined{
-  font-size: 5vw;
-  color:#AA9371;
-}
+
 
 .card-gift{
   border: 0px;

@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     //===
     // VARIABLES
     //===
-    const DATE_TARGET = new Date('10/16/2024 00:00 AM');
+    const DATE_TARGET = new Date('11/16/2024 00:00 AM');
     // DOM for render
     const SPAN_DAYS = document.querySelector('span#days');
     const SPAN_HOURS = document.querySelector('span#hours');
