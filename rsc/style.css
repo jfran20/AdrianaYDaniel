@@ -38,6 +38,13 @@
   background-size: cover, cover;
   height: 100vh;
 }
+.spacerBanner{
+  height: 50%;
+}
+.whatsBttn{
+  width: 30%;
+}
+
 .btn{
   border-radius: 20px;
   color:black;
@@ -177,5 +184,10 @@ ul > a {
  .card-gift{
   margin-top: 2vh;
  }
-
+ .spacerBanner{
+  height: 45%;
+ }
+ .whatsBttn{
+  width: 80%;
+ }
 };
